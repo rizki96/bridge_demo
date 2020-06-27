@@ -16,5 +16,5 @@ Pyrlang demo for bridging between python and elixir
 * terminal1 run: > iex --name test@127.0.0.1 --cookie COOKIE -S mix run --no-halt
 * terminal2 run: > python lib/pyrlang/test.py
 * from iex console (terminal1) try run :
-  iex> alias Bridge.PyProxy
-  iex> PyProxy.hello()
+  - iex> alias Bridge.PyProxy
+  - iex> PyProxy.hello()
