@@ -3,9 +3,6 @@
 # Python server will reply with its own Pid, so then you know the Pid and can
 # send to it directly (second send call).
 #
-# Run `make example10a` to run Python node
-# Run `make example10b` to run Elixir client which will perform the call
-#
 
 import logging
 
