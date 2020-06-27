@@ -1,21 +1,20 @@
 # Bridge
 
-**TODO: Add description**
+Pyrlang demo for bridging between python and elixir
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `bridge` to your list of dependencies in `mix.exs`:
+* install erlang OTP 21 and elixir 1.9 or 1.10
+* install python 3.7
+* install pyrlang :
+  - pip install https://github.com/rizki96/bridge_demo/releases/download/0.1.0/pyrlang-term-1.2.tar.gz
+  - pip install https://github.com/rizki96/bridge_demo/releases/download/0.1.0/pyrlang-0.9.tar.gz
 
-```elixir
-def deps do
-  [
-    {:bridge, "~> 0.1.0"}
-  ]
-end
-```
+## Running the demo
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/bridge](https://hexdocs.pm/bridge).
-
+* open two terminal
+* terminal1 run: > iex --name test@127.0.0.1 --cookie COOKIE -S mix run --no-halt
+* terminal2 run: > python lib/pyrlang/test.py
+* from iex console (terminal1) try run :
+  iex> alias Bridge.PyProxy
+  iex> PyProxy.hello()
