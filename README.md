@@ -9,10 +9,12 @@ Pyrlang demo for bridging between python and elixir
 * install pyrlang :
   - pip install https://github.com/rizki96/bridge_demo/releases/download/0.1.0/pyrlang-term-1.2.tar.gz
   - pip install https://github.com/rizki96/bridge_demo/releases/download/0.1.0/pyrlang-0.9.tar.gz
+* git clone https://github.com/rizki96/bridge_demo.git
 
 ## Running the demo
 
 * open two terminal
+* cd bridge_demo # on two terminal go to the project's directory
 * terminal1 run: > iex --name test@127.0.0.1 --cookie COOKIE -S mix run --no-halt
 * terminal2 run: > python lib/pyrlang/test.py
 * from iex console (terminal1) try run :
